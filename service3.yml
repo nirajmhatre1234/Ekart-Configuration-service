@@ -3,4 +3,4 @@ spring:
     name: service3
   cloud:
     config:
-      uri: http://localhost:8888
+       uri: https://localhost:9876
