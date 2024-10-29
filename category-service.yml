@@ -3,7 +3,7 @@ spring:
     name: category-service
 
   config:
-    import: configserver:http://localhost:9876  # Add this line
+    import: configserver:http://localhost:9876
 
   datasource:
     url: jdbc:mysql://localhost:3306/ekart
@@ -14,9 +14,9 @@ spring:
   jpa:
     properties:
       hibernate:
-        #dialect: org.hibernate.dialect.MySQLDialect
-    ddl-auto: update
-    show-sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+        ddl-auto: update
+        show-sql: true
 
   cloud:
     config:
@@ -26,5 +26,5 @@ spring:
 
 eureka:
   client:
-    serviceUrl:
+    serviceUrl: ...
       defaultZone: http://localhost:8761/eureka/
