@@ -15,8 +15,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
-        ddl-auto: update
-        show-sql: true
+    ddl-auto: update
+    show-sql: true
 
   cloud:
     config:
@@ -26,5 +26,5 @@ spring:
 
 eureka:
   client:
-    serviceUrl: ...
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka/
