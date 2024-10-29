@@ -1,6 +1,8 @@
-spring:
-  application:
-    name: category-service
-  cloud:
-    config:
-      uri: https://localhost:9876
+# category-service.yml
+server:
+  port: 8081
+
+product:
+  service:
+    url: http://localhost:9081/product
+
