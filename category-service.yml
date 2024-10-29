@@ -1,6 +1,6 @@
 spring:
   application:
-    name: service1
+    name: category-service
   cloud:
     config:
       uri: https://localhost:9876
