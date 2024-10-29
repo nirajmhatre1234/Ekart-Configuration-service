@@ -1,8 +1,27 @@
-# category-service.yml
-server:
-  port: 8081
+spring:
+  application:
+    name: category-service
 
-product:
-  service:
-    url: http://localhost:9081/product
+  datasource:
+    url: jdbc:mysql://localhost:3306/ekart
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
+  jpa:
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect
+      ddl-auto: update
+      show-sql: true
+
+  cloud:
+    config:
+      uri: http://localhost:9876
+      import-check:
+        enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
