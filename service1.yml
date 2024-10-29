@@ -3,4 +3,4 @@ spring:
     name: service1
   cloud:
     config:
-      uri: http://localhost:8888 # URL of your Config Server
+      uri: https://localhost:9876
